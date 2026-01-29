@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "api/mrac.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/api/mrac.py"
+        }
+    ]
+}
